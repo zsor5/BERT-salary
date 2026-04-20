@@ -11,3 +11,4 @@ Training History
 | **3** | **0.1620** | **0.0840** | **0.0840** | **0.2182** | **0.6871** | **91.56%** |
 | 4 | 0.1543 | 0.0967 | 0.0967 | 0.2398 | 0.6396 | 90.28% |
 
+This (custom) "accuracy" metric measures the percentage of model predictions that fall within a 0.5 log-unit margin (since $e = \sqrt{0.25} = 0.5$) of the true value. In practical terms, it represents the frequency with which the model's salary estimate is correct within a specific, tight error tolerance on the log scale.
