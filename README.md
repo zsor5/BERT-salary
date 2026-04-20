@@ -1,34 +1,13 @@
 # job-salary-prediction
-Job Salary Prediction: Hybrid ML &amp; Deep Learning Approach
 
-Overview
+https://huggingface.co/spaces/zsor/BERT-salary // try it
 
-This project uses Natural Language Processing (NLP) and Machine Learning techniques to predict job salaries based on job descriptions.
-The goal was to explore how textual information — like required skills, job titles, and company details — can be transformed into meaningful numerical features that help estimate salary ranges.
+Training History
 
-Methods
+| Epoch | Training Loss | Validation Loss | MSE | MAE | R² | Accuracy |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | 0.2394 | 0.1127 | 0.1127 | 0.2594 | 0.5797 | 86.75% |
+| 2 | 0.1934 | 0.1086 | 0.1086 | 0.2592 | 0.5952 | 88.21% |
+| **3** | **0.1620** | **0.0840** | **0.0840** | **0.2182** | **0.6871** | **91.56%** |
+| 4 | 0.1543 | 0.0967 | 0.0967 | 0.2398 | 0.6396 | 90.28% |
 
-I started by preprocessing job postings, cleaning and vectorizing the text using techniques like:
-
-Bag of Words (BOW)
-
-TF-IDF (Term Frequency–Inverse Document Frequency)
-
-These representations were then used to train and evaluate regression models.
-Later, I extended the project by experimenting with deep learning methods to see if language models could improve predictions.
-
-Technologies Used
-
-Python
-
-Pandas, NumPy, scikit-learn
-
-Matplotlib / Seaborn
-
-NLTK / spaCy
-
-Jupyter Notebook
-
-Results
-
-The models were evaluated using Mean Squared Error (MSE), and I compared the performance of several algorithms to find the best balance between accuracy and interpretability.
